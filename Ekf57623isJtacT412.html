@@ -7,10 +7,10 @@
       const constraints = {
         video: {
           width: {
-            20%;
+            window.innerWidth*0.2;
           },
           height: {
-            15%;
+            window.innerWidth*0.15;
           },
         },
       }
@@ -21,7 +21,7 @@
     </script>
   </head>
   <body>
-    <video autoplay id="video" style="padding-left: 80%" z-index="1"></video>
+    <video autoplay id="video" style="padding-left: 80%" z-index="-1"></video>
     <div style='margin-top: -20%"
       <img src='./p1.png', width=80%></img>
       <input id='01' placeholder='answer'></input>
