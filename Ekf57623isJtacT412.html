@@ -6,10 +6,9 @@
       const video = document.querySelector('video');
       if (navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({ video: true })
-          .then(stream => video.srcObject = stream)
-          .catch(error => console.log(error));
-        }
-       }
+         .then(stream => video.srcObject = stream)
+         .catch(error => console.log(error));
+      }
     </script>
   </head>
   <body>
