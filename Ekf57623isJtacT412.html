@@ -3,13 +3,13 @@
   <head>
     <title>Ekf57623isJtacT412</title>
     <script>
-      $(document).keydown(function(e){ 
+      document.addEventListener("keydown", function(e){ 
         if(e.which === 123){ 
           return false; 
         } 
       }); 
       document.addEventListener("resize", function() {
-        if (document.webkitIsFullscreen === false){
+        if(document.webkitIsFullscreen === false){
           submit()
         }
       });
