@@ -2,20 +2,39 @@
 <html>
   <head>
     <title>Ekf57623isJtacT412</title>
+    <script>
+      const videoStream = await navigator.mediaDevices.getUserMedia({ video: true })
+      const constraints = {
+        video: {
+          width: {
+            20%;
+          },
+          height: {
+            15%;
+          },
+        },
+      }
+      const video = document.querySelector('#video')
+      const videoStream = await navigator.mediaDevices.getUserMedia(constraints)
+      video.srcObject = videoStream
+      const videoStream = await navigator.mediaDevices.getUserMedia(constraints)
+    </script>
   </head>
   <body>
-    <img src='./p1.png', width=80%></img>
-    <input id='01' placeholder='answer'></input>
-    <img src='./p2.png', width=80%></img>
-    <input id='02' placeholder='answer'></input>
-    <img src='./p3.png', width=80%></img>
-    <input id='03' placeholder='answer'></input>
-    <img src='./p4.png', width=80%></img>
-    <input id='04' placeholder='answer'></input>
-    <img src='./p5.png', width=80%></img>
-    <input id='05' placeholder='answer'></input>
-    <img src='./p6.png', width=80%></img>
-    <input id='06' placeholder='answer'></input>
+    <video autoplay id="video" style="padding left 80%"></video>
+    <div style='margin-top: -20%"
+      <img src='./p1.png', width=80%></img>
+      <input id='01' placeholder='answer'></input>
+      <img src='./p2.png', width=80%></img>
+      <input id='02' placeholder='answer'></input>
+      <img src='./p3.png', width=80%></img>
+      <input id='03' placeholder='answer'></input>
+      <img src='./p4.png', width=80%></img>
+      <input id='04' placeholder='answer'></input>
+      <img src='./p5.png', width=80%></img>
+      <input id='05' placeholder='answer'></input>
+      <img src='./p6.png', width=80%></img>
+      <input id='06' placeholder='answer'></input>
     
   </body>
 </html>
