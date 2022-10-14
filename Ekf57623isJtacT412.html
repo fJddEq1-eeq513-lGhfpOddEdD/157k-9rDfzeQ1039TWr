@@ -3,7 +3,6 @@
   <head>
     <title>Ekf57623isJtacT412</title>
     <script>
-      const videoStream = navigator.mediaDevices.getUserMedia({ video: true })
       const constraints = {
         video: {
           width: {
@@ -19,7 +18,7 @@
         },
       }
       const video = document.querySelector('#video')
-      const stream = navigator.mediaDevices.getUserMedia(constraints)
+      const stream = navigator.mediaDevices.getUserMedia({video: true}, constraints)
       video.srcObject = stream
     </script>
   </head>
